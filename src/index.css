@@ -23,3 +23,6 @@ nav {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1rem;
 }
+footer {
+  background-color: black !important;
+}
