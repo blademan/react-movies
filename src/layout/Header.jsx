@@ -5,12 +5,12 @@ export default function Header() {
     <>
       <nav className=" purple accent-2">
         <div className="nav-wrapper">
-          <a href="/" className="brand-logo">
+          <a href="https://blademan.github.io/react-movies/" className="brand-logo">
             React Movies
           </a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
-              <a href="!#">Repo</a>
+              <a href="https://github.com/blademan/react-movies">Repo</a>
             </li>
           </ul>
         </div>
