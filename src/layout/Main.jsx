@@ -10,17 +10,12 @@ export default function Main() {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [movieFromDB, setMovieFromDB] = useState([]);
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState('Batman');
   const [type, setType] = useState('all');
 
   useEffect(() => {
-    let temp = 'Batman';
-    if (search) {
-      temp = search;
-    }
-
     fetch(
-      `https://www.omdbapi.com/?s=${temp}&page=1&apikey=${API_KEY}=${
+      `https://www.omdbapi.com/?s=${search}&page=1&apikey=${API_KEY}=${
         type !== 'all' ? `&type=${type}` : ''
       }`,
     )
